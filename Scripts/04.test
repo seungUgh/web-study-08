@@ -1,0 +1,16 @@
+SELECT NAME, USERID, PWD, EMAIL, PHONE, ADMIN
+FROM MEMBER;
+
+SELECT NAME, USERID, PWD, EMAIL, PHONE, ADMIN
+FROM MEMBER
+WHERE USERID = 'somi';
+
+INSERT INTO MEMBER values('박규영', 'parkgy', '1234', 'pgy@gamil.com', '010-1111-2222', 0);
+
+UPDATE MEMBER
+SET name='문채원', pwd='5678', email='mcw@gmail.com', phone='010-3333-5555', admin='1'
+WHERE userid = 'parkgy';
+
+DELETE 
+FROM MEMBER
+WHERE userid = 'parkgy';
